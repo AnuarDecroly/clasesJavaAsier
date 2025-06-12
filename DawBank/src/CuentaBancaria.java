@@ -73,7 +73,7 @@ public class CuentaBancaria {
     }
 
     public void registrarMovimiento(double cantidad, Tipo tipo){
-        if(tipo.Ingreso == Tipo.Ingreso){
+        if(tipo == Tipo.Ingreso){
             this.saldo += Math.abs(cantidad);
         }
         else{
@@ -100,7 +100,7 @@ public class CuentaBancaria {
         }else{
             info = "No hay movimientos en la cuenta bancaria";
         }
-        
+
         return info;
     }
 }
