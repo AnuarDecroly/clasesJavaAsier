@@ -15,7 +15,6 @@ public class Movimiento {
         this.cantidad = cantidad;
 
         registro++;
-
     }
 
     public int getId() {
@@ -32,6 +31,11 @@ public class Movimiento {
 
     public Tipo getTipo() {
         return this.tipo;
+    }
+
+    @Override
+    public String toString() {
+        return "Movimiento [id =" + id + ", fecha =" + fecha + ", cantidad =" + cantidad + ", tipo =" + tipo + "]";
     }
 
     

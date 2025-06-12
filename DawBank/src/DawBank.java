@@ -1,6 +1,16 @@
+import java.util.Scanner;
+
 public class DawBank {
     public static void main(String[] args) {
-        Movimiento m = new Movimiento("312312", Tipo.Ingreso, 500);
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.println("Introduzca el nombre del titular");
+        String titular = reader.next();
+        
+        String iban = MiUtils.comprobarPatronRepetidamente("[A-Z]{2}[0-9]{5}", "Introduzca el IBAN");
+
+        CuentaBancaria cuenta =  new CuentaBancaria(titular, iban);
 
         
     }
