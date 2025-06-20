@@ -1,0 +1,5 @@
+prod-001,patatas,1kg,5E
+prod-001,patatas,1kg,5E
+prod-001,patatas,1kg,5E
+prod-001,patatas,1kg,5E
+prod-001,patatas,1kg,5E
